@@ -130,3 +130,6 @@ dist
 .pnp.*
 
 garbage.md
+
+credentials.json
+suspended.png
