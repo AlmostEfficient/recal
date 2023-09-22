@@ -6,49 +6,85 @@
     <style>
         body {
             margin: 0;
-            font-family: 'Arial', sans-serif;
+            font-family: Helvetica, Arial, sans-serif;
+            background-color: #f0f0f0;
             display: flex;
             flex-direction: column;
             align-items: center;
             height: 100vh;
-            background-color: #f0f0f0;
+            overflow: hidden;
         }
         .day {
-            font-size: 48px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 60px;
             color: #333;
-            margin-top: 2vh; /* Adjust as needed */
+            text-align: right;
+            margin: 2.5vh 5vw;
+            align-self: flex-end;
+            width: 92%;
         }
-        .events {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 80%; /* Adjust as needed */
+        .events, .upcoming-events {
+            width: 75%;
+            flex: 3;
+            margin-top: 2vh;
         }
         .event {
-            background-color: #fff;
             margin-bottom: 1vh;
-            padding: 1vh;
-            width: 100%;
-            box-shadow: 0px 0px 10px 0px #00000033;
+            padding: 2vh 1vw;
+            font-size: 42px;
+        }
+        .event-time {
+            color: #666;
+            font-size: 32px;
+            padding-top: 0.5vh;
+        }
+        .upcoming-event {
+            font-size: 36px;
+            color: #666;
+            margin-bottom: 1vh;
         }
         .quote {
+            font-size: 40px;
             font-style: italic;
             color: #666;
-            margin-bottom: 2vh; /* Adjust as needed */
+            margin: 2vh 4vw;
             text-align: center;
-            width: 70%; /* Adjust as needed */
+            flex: 1;
+        }
+        .author {
+            font-size: 28px;
+            color: #444;
         }
     </style>
 </head>
 <body>
     <div class="day">Monday, September 25th</div>
     <div class="events">
-        <div class="event">Event 1: Meeting with Bob at 10:00 AM</div>
-        <div class="event">Event 2: Lunch with Alice at 12:00 PM</div>
-        <div class="event">Event 3: Project deadline at 5:00 PM</div>
+        <div class="event">
+          Meeting with Bob
+          <div class="event-time">10:00 AM</div>
+        </div>        
+        <div class="event">
+          Meeting with Bob
+          <div class="event-time">10:00 AM</div>
+        </div>
+        <div class="event">
+          Meeting with Bob
+          <div class="event-time">10:00 AM</div>
+        </div>
+        <div class="event">
+          Meeting with Bob
+          <div class="event-time">10:00 AM</div>
+        </div>
+        <!-- Add more events as needed -->
     </div>
-    <div class="quote">"This is a quote at the bottom of the page."</div>
+    <div class="upcoming-events">
+        <div class="upcoming-event">Tuesday - 12:00 PM: Lunch with Alice</div>
+        <div class="upcoming-event">Tuesday - 12:00 PM: Lunch with Alice</div>
+        <div class="upcoming-event">Tuesday - 12:00 PM: Lunch with Alice</div>
+        <div class="upcoming-event">Tuesday - 12:00 PM: Lunch with Alice</div>
+        <!-- Add more upcoming events as needed -->
+    </div>
+    <div class="quote">"This is a quote at the bottom of the page."<br><span class="author">- Author Name</span></div>
 </body>
 </html>
